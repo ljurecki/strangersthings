@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5e2724f6.css",
+    "main.js": "/static/js/main.249f52c9.js",
+    "static/media/hoarding.jpg": "/static/media/hoarding.50fb2d6507835fd2f552.jpg",
+    "index.html": "/index.html",
+    "main.5e2724f6.css.map": "/static/css/main.5e2724f6.css.map",
+    "main.249f52c9.js.map": "/static/js/main.249f52c9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5e2724f6.css",
+    "static/js/main.249f52c9.js"
+  ]
+}
