@@ -27,8 +27,13 @@ const Posts = ({ posts, token, fetchPosts, navigate }) => {
         <input id="searchBar" type="text" placeholder="Search Posts" onChange={(event) => setSearchTerm(event.target.value)} />
       </form>
       <div id='outer div element'>
-
+              {
+            token ? (
         <button id="createBttn"><Link to='/posts/create-post'>Create a Posting</Link></button>
+            ) : (
+              <button id="createBttn"><Link to='/Register'>Create a Posting</Link></button>
+            )
+      }
         {
           postsToDisplay.map((post) => {
             const { description, location, price, title, willDeliver, createdAt, updatedAt, _id, isAuthor, } = post;
