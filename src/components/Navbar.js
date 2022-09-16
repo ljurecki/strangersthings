@@ -8,11 +8,10 @@ const Navbar = ({ logout, token }) => {
       <div id='nav'>
         <nav>
           <Link to='/' className='navlink'>Home</Link>
-
+          <Link to='/posts' className='navlink'>Posts</Link>
           {
             token ? (
               <>
-                <Link to='/posts' className='navlink'>Posts</Link>
                 <Link to='/profile' className='navlink'>Profile</Link>
                 <Link to='/' onClick={() => logout()} className='navlink'>Logout</Link>
               </>

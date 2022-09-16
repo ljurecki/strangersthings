@@ -20,9 +20,10 @@ const CreatePost = ({ token, fetchPosts, navigate }) => {
     fetchPosts();
     navigate('./posts')
   }
-
+  
   return (
     //Form that accepts the the 5 request parameters for creating a post
+    
     <form id="forms">
       <h1>Create a Post</h1>
       <label className="formLabel">Title:</label>
@@ -52,7 +53,7 @@ const CreatePost = ({ token, fetchPosts, navigate }) => {
               type='checkbox' id="No"/> No</label>  */}
       <button className="Btn" onClick={(event) => { event.preventDefault(); addPost() }}>Submit</button>
     </form>
-  )
+  ) 
 }
 
 export default CreatePost;
